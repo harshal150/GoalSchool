@@ -1,0 +1,84 @@
+/* Overlay to dim the background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 9999;
+  }
+  
+  /* Popup Card Styling */
+  .popup-card {
+    width: 300px;
+    height: 170px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 15px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Close Button */
+  .popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    background-color: #3c3b3b;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .popup-close-button:hover {
+    background-color: #f61e1e;
+  }
+  
+  /* Icon styling */
+  #cookieSvg {
+    width: 50px;
+  }
+  
+  /* Text styling */
+  .popup-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Button styling */
+  .popup-button {
+    width: 120px;
+    height: 35px;
+    background-color: #7b57ff;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px #977ef3, 0 2px 4px -1px #977ef3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .popup-button:hover {
+    background-color: #9173ff;
+    box-shadow: 0 8px 10px -3px #977ef3, 0 4px 6px -2px #977ef3;
+  }
+  

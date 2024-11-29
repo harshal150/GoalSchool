@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+  .navbutton {
+    background: linear-gradient(-45deg,  #FF3D77, #338AFF ,#00008B);
+    background-size: 600%;
+    animation: anime 6s linear infinite;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white !important;
+}
+
+
+.navbutton:hover {
+    color: white !important;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@keyframes anime {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
