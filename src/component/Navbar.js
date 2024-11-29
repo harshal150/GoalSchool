@@ -39,9 +39,9 @@ const Navbar = () => {
               <Link to="/about" className="">
                   About Us
                 </Link>
-                <span className="ml-1 text-sm">&#9662;</span>
+                {/* <span className="ml-1 text-sm">&#9662;</span> */}
               </button>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md  w-48 z-10">
+              {/* <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md  w-48 z-10">
                 <Link to="/about/why-us" className="block px-4 py-2 text-sm hover:bg-gray-100">
                   Why Us
                 </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <Link to="/about/vision-mission" className="block px-4 py-2 text-sm hover:bg-gray-100">
                   Vision & Mission
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             {/* Admissions with Submenu */}
