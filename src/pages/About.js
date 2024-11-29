@@ -5,6 +5,7 @@ import ManagmentTeam from '../component/about/ManagmentTeam'
 import Faculty from '../component/about/Faculty'
 import VisionMission from '../component/about/VisionMission'
 import KidsGallery from '../component/KidsGallery'
+import Footer from '../component/Footer'
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
      <ManagmentTeam/>
      <Faculty/>
      <KidsGallery/>
+     <Footer/>
     </div>
   )
 }

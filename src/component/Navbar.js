@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import logo from '../assets/logo.png'
 import logo from '../assets/logo/logo.jpg'
 const Navbar = () => {
@@ -13,6 +13,12 @@ const Navbar = () => {
   const toggleSubmenu = (menu) => {
     setActiveMenu(activeMenu === menu ? null : menu);
   };
+
+
+  // const navigate = useNavigate()
+
+
+
 
   return (
     <nav className="bg-white shadow-md">
@@ -160,13 +166,15 @@ const Navbar = () => {
       {/* About Us Submenu */}
       <div>
         <button
-          onClick={() => toggleSubmenu('about')}
+          // onClick={() => toggleSubmenu('/about')}
           className="flex justify-between w-full text-left text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium"
         >
-          About Us
-          <span className="ml-1 text-sm">&#9662;</span>
+           <Link to="/about" className="">
+                  About Us
+                </Link>
+          {/* <span className="ml-1 text-sm">&#9662;</span> */}
         </button>
-        {activeMenu === 'about' && (
+        {/* {activeMenu === 'about' && (
           <div className="ml-4 space-y-1">
             <Link to="/about/why-us" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Why Us
@@ -181,7 +189,7 @@ const Navbar = () => {
               Vision & Mission
             </Link>
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Admissions Submenu */}

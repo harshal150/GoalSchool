@@ -1,8 +1,8 @@
 import React from "react";
-import { Icon } from "@iconify/react";
-import one from '../assets/1.jpg'
-import two from '../assets/2.avif'
-import three from '../assets/3.avif'
+import one from "../assets/1.jpg";
+import two from "../assets/2.avif";
+import three from "../assets/3.avif";
+
 const FeaturesSection = () => {
   const features = [
     {
@@ -23,17 +23,22 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white  mx-12 rounded-lg shadow-lg z-50 cursor-pointer m-5">
-      {features.map((feature, index) => (
-        <div
-          key={index}
-          className={`flex flex-col items-center justify-center p-6 transition-all duration-300 ${feature.hoverColor}`}
-        >
-          {/* <Icon icon={feature.icon} width="48" height="48" className="mb-4 text-teal-500" /> */}
-          <img src={feature.icon} alt="" className="h-16 w-16 mb-4 rounded-2xl  "  />
-          <h3 className="text-lg font-semibold text-gray-800 text-center">{feature.title}</h3>
-        </div>
-      ))}
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white mx-auto rounded-lg shadow-lg cursor-pointer">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className={`flex flex-col items-center justify-center p-6 transition-all duration-300 ${feature.hoverColor} text-center`}
+          >
+            <img
+              src={feature.icon}
+              alt={feature.title}
+              className="h-16 w-16 mb-4 rounded-2xl object-cover"
+            />
+            <h3 className="text-lg font-semibold text-gray-800">{feature.title}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
