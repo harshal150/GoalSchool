@@ -6,7 +6,7 @@ import Footer from "../component/Footer";
 import EnquiryPopUp from "../component/enquiry/EnquiryPopUp";
 import Marquee from "../component/Marquee";
 import FeaturesSection from "../component/FeaturesSection";
-import PrincipleMessage from "../component/PrincipleMessage";
+import PrincipleMessage from "../component/DirectorsMessage";
 import Numbers from "../component/Numbers";
 import Tagline from "../component/Tagline";
 const Home = () => {

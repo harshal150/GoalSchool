@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import vissioj from "../../assets/About/vission.jpg"; // Vision image
 import Mission from "../../assets/About/mission.avif"; // Mission image
 
-const VisionMission = () => {
+const Motto = () => {
   const [visibleSections, setVisibleSections] = useState({
     vision: false,
     mission: false,
@@ -65,58 +65,23 @@ const VisionMission = () => {
         {/* Right Side: Vision Text */}
         <div className="w-full lg:w-1/2 lg:pl-6">
           <h2 className="my-4 font-bold text-3xl sm:text-4xl">
-            Our <span className="text-indigo-600">Vision</span>
+            Our <span className="text-indigo-600">Motto</span>
           </h2>
+          <p className="mb-4 italic text-gray-700 font-semibold">
+          "Education is not the learning of facts, but the training 
+          of the mind to think." – Albert Einstein 
+          </p>
           <p className="text-sm text-gray-700 font-semibold">
-          "To inspire and nurture young minds, shaping future 
-leaders who are driven by curiosity, integrity, and a 
-commitment to positive change in the world." 
-
+          This motto reflects the school's dedication to delivering the 
+highest quality education and empowering rural children with 
+global opportunities.
           </p>
         </div>
       </div>
 
-      {/* Mission Section */}
-      <div
-        id="mission"
-        ref={missionRef}
-        className={`flex flex-wrap bg-green-100 items-center justify-between py-10 px-6 sm:px-12 lg:px-16 transition-transform duration-1000 ${
-          visibleSections.mission
-            ? "opacity-100 scale-100"
-            : "opacity-0 scale-90"
-        }`}
-      >
-        {/* Left Side: Mission Text */}
-        <div className="w-full lg:w-1/2 lg:pr-6 mb-8 lg:mb-0">
-          <h2 className="my-4 font-bold text-3xl sm:text-4xl">
-            Our <span className="text-indigo-600">Mission</span>
-          </h2>
-          <p className="text-sm text-gray-700 font-semibold">
-            
-"Empowering students to achieve excellence through knowledge, 
-character, and compassion, preparing them to lead and succeed 
-in a global society." 
-          </p>
-        </div>
-
-        {/* Right Side: Mission Image */}
-        <div className="relative w-full lg:w-[500px] lg:pl-6">
-          <div className="overflow-hidden rounded-tl-[180px] rounded-tr-[150px] rounded-br-[200px] rounded-bl-[50px]">
-            <img
-              src={Mission}
-              alt="Mission"
-              className="w-[90%] h-auto object-cover"
-            />
-          </div>
-          {/* Circle Decoration */}
-          {/* <div className="absolute -bottom-6 left-1 flex space-x-2">
-            <div className="w-12 h-12 bg-[#FFD500] rounded-full"></div>
-            <div className="w-6 h-6 bg-[#FF8C00] rounded-full"></div>
-          </div> */}
-        </div>
-      </div>
+  
     </div>
   );
 };
 
-export default VisionMission;
+export default Motto;

@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-xl  hover:shadow-2xl transition-shadow z-50 " >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
@@ -45,63 +45,66 @@ const Navbar = () => {
               <Link to="/about" className="">
                   About Us
                 </Link>
-                {/* <span className="ml-1 text-sm">&#9662;</span> */}
-              </button>
-              {/* <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md  w-48 z-10">
-                <Link to="/about/why-us" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  Why Us
-                </Link>
-                <Link to="/about/school-motto" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  School Motto
-                </Link>
-                <Link to="/about/school-info" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  School Info
-                </Link>
-                <Link to="/about/vision-mission" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  Vision & Mission
-                </Link>
-              </div> */}
-            </div>
-
-            {/* Admissions with Submenu */}
-            <div className="relative group">
-              <button className="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
-                Admissions
                 <span className="ml-1 text-sm">&#9662;</span>
               </button>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md  w-48 z-10">
-                <Link to="/admissions/programs" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  Admission Programs
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-10">
+                <Link to="/motto" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                Motto
                 </Link>
-                <Link to="/admissions/form" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  Admission Form
+                <Link to="/history" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                 School History
                 </Link>
-                <Link to="/admissions/inquiry" className="block px-4 py-2 text-sm hover:bg-gray-100">
-                  Inquiry Form
+                <Link to="/principlemessage" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                 Principal's Message
+                </Link>
+                <Link to="/visionmission" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                  Vision & Mission
                 </Link>
               </div>
             </div>
 
+            <div className="relative group">
+              <button className="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
+              <Link to="/admission" className="">
+                  Admissions
+                </Link>
+                <span className="ml-1 text-sm">&#9662;</span>
+              </button>
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-10">
+                <Link to="/admissionprograms" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+               Admission Programs
+                </Link>
+                <Link to="/form" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                Admission Form
+                </Link>
+                <Link to="/enquiry" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                Enquiry Form 
+                </Link>
+               
+              </div>
+            </div>
+
+       
             {/* Resources with Submenu */}
             <div className="relative group">
               <button className="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
                 Resources
                 <span className="ml-1 text-sm">&#9662;</span>
               </button>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-0 w-48 z-10">
-                <Link to="/resources/gallery" className="block px-4 py-2 text-sm hover:bg-gray-100">
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-10">
+                <Link to="/gallery" className="block px-4 py-2 text-sm hover:bg-gray-100  hover:rounded-lg">
                   Gallery
                 </Link>
-                <Link to="/resources/counseling" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                <Link to="/counseling" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                   Career Counseling
                 </Link>
-                <Link to="/resources/calendar" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                <Link to="/calendar" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                   School Calendar
                 </Link>
-                <Link to="/resources/publications" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                <Link to="/publications" className="block px-4 py-2 text-sm hover:bg-gray-100  hover:rounded-lg">
                   Publications
                 </Link>
-                <Link to="/resources/blogs" className="block px-4 py-2 text-sm hover:bg-gray-100">
+                <Link to="/blogs" className="block px-4 py-2 text-sm hover:bg-gray-100  hover:rounded-lg">
                   Blogs
                 </Link>
               </div>
@@ -116,12 +119,12 @@ const Navbar = () => {
             <Link to="/student-life" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
               Student Life
             </Link>
-            <Link to="/contact" className="cp_rainbow_btn text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
+            <Link to="/contact" className="cp_rainbow_btn text-gray-900 px-3 py-2 text-sm font-medium">
               Contact Us
             </Link>
             <style>{`
                   .cp_rainbow_btn {
-                    background: linear-gradient(-45deg, #AF3D77, #438CFF, #ee872c);
+                    background: linear-gradient(-45deg, #FF3D77, #338AFF ,#00008B);
                     background-size: 600%;
                     animation: anime 6s linear infinite;
                    
@@ -166,30 +169,30 @@ const Navbar = () => {
       {/* About Us Submenu */}
       <div>
         <button
-          // onClick={() => toggleSubmenu('/about')}
+          onClick={() => toggleSubmenu('about')}
           className="flex justify-between w-full text-left text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium"
         >
            <Link to="/about" className="">
                   About Us
                 </Link>
-          {/* <span className="ml-1 text-sm">&#9662;</span> */}
+          <span className="ml-1 text-sm">&#9662;</span>
         </button>
-        {/* {activeMenu === 'about' && (
-          <div className="ml-4 space-y-1">
-            <Link to="/about/why-us" className="block px-4 py-2 text-sm hover:bg-gray-100">
-              Why Us
+        {activeMenu === 'about' && (
+          <div className="ml-4 space-y-1 font-semibold text-gray-700">
+            <Link to="/motto" className="block px-4 py-2 text-sm hover:bg-gray-100">
+              Motto
             </Link>
-            <Link to="/about/school-motto" className="block px-4 py-2 text-sm hover:bg-gray-100">
-              School Motto
+            <Link to="/history" className="block px-4 py-2 text-sm hover:bg-gray-100">
+              School History
             </Link>
-            <Link to="/about/school-info" className="block px-4 py-2 text-sm hover:bg-gray-100">
-              School Info
+            <Link to="/principlemessage" className="block px-4 py-2 text-sm hover:bg-gray-100">
+              Principal's Message
             </Link>
-            <Link to="/about/vision-mission" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            <Link to="/visionmission" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Vision & Mission
             </Link>
           </div>
-        )} */}
+        )}
       </div>
 
       {/* Admissions Submenu */}
@@ -202,14 +205,14 @@ const Navbar = () => {
           <span className="ml-1 text-sm">&#9662;</span>
         </button>
         {activeMenu === 'admissions' && (
-          <div className="ml-4 space-y-1">
-            <Link to="/admissions/programs" className="block px-4 py-2 text-sm hover:bg-gray-100">
+          <div className="ml-4 space-y-1 font-semibold text-gray-700">
+            <Link to="/admissionprograms" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Admission Programs
             </Link>
-            <Link to="/admissions/form" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            <Link to="/form" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Admission Form
             </Link>
-            <Link to="/admissions/inquiry" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            <Link to="/enquiry" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Inquiry Form
             </Link>
           </div>

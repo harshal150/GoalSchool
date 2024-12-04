@@ -1,7 +1,13 @@
 import React from "react";
 import "./EnquiryPopUp.css";
-
+import { useNavigate } from "react-router-dom";
 const EnquiryPopUp = ({ onClose }) => {
+  const naviget = useNavigate();
+
+  const handleClick=() => {
+     naviget("/enquiry");
+  }
+  
   return (
     <div className="popup-overlay">
       <div className="popup-card">
@@ -11,7 +17,7 @@ const EnquiryPopUp = ({ onClose }) => {
         </button>
 
         <p className="popup-heading">Admissions Open for AY 2024-25</p>
-        <button className="popup-button">Enquiry Now</button>
+        <button className="popup-button" onClick={handleClick}>Enquiry Now</button>
       </div>
     </div>
   );

@@ -4,7 +4,14 @@ import Loader from "./component/loader/Loader";
 import Home from "./pages/Home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import About from "./pages/About";
+import About from "./pages/about/About";
+import Motto from "./pages/about/Motto";
+import VissionMission from "./pages/about/VissionMission";
+import Principlemsg from "./pages/about/Principlemsg";
+import History from "./pages/about/History";
+import EnquiryPage from "./pages/EnquiryPage";
+import AdmissionProgramsPage from "./pages/AdmissionProgramsPage";
+import GalleryPage from "./pages/resourcepages/GalleryPage";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -30,6 +37,13 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+      <Route path="/enquiry" element={<EnquiryPage />} />
+      <Route path="/motto" element={<Motto />} />
+      <Route path="/visionmission" element={<VissionMission />} />
+      <Route path="/principlemessage" element={<Principlemsg />} />
+      <Route path="/history" element={<History />} />
+      <Route path="/gallery" element={<GalleryPage />} />
+      <Route path="/admissionprograms" element={<AdmissionProgramsPage />} />
       </Routes>
 
       {/* WhatsApp Icon */}

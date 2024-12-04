@@ -10,7 +10,7 @@ import bgImage4 from "../assets/Header/bg7.jpg";
 import bgImage5 from "../assets/Header/bg8.jpg";
 import bgImage6 from "../assets/Header/bg9.jpg";
 import { Icon } from "@iconify/react";
-
+import { useNavigate } from "react-router-dom";
 import './Header.css'
 
 const Header = () => {
@@ -23,6 +23,11 @@ const Header = () => {
     }, 3000); // Change image every 3 seconds
     return () => clearInterval(interval);
   }, [images.length]);
+
+const navigate = useNavigate();
+const handelClick = () => {
+  navigate('/admissionprograms')
+}
 
   return (
     <header
@@ -47,7 +52,7 @@ const Header = () => {
               <span className="capitalize mt-2">International School</span>
             </h2>
             <div className="md:mr-40 lg:mr-48 lg:mt-10">
-              <button className="navbutton bg-blue-600 text-white py-2 px-6 rounded-md flex items-center hover:bg-blue-700 transition duration-300">
+              <button onClick={handelClick} className="navbutton bg-blue-600 text-white py-2 px-6 rounded-md flex items-center hover:bg-blue-700 transition duration-300">
                 Admissions Open for AY 2024-2025
                 <Icon
                   icon="flowbite:arrow-right-outline"
