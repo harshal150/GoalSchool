@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 // import logo from '../assets/logo.png'
+import calenderpdf from '../assets/calender.pdf'
 import logo from '../assets/logo/logo.jpg'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -95,12 +96,21 @@ const Navbar = () => {
                 <Link to="/gallery" className="block px-4 py-2 text-sm hover:bg-gray-100  hover:rounded-lg">
                   Gallery
                 </Link>
-                <Link to="/counseling" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                {/* <Link to="/counseling" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                   Career Counseling
-                </Link>
-                <Link to="/calendar" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                </Link> */}
+                {/* <Link to="/calendar" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                   School Calendar
-                </Link>
+                </Link> */}
+                <a
+  href={calenderpdf}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg"
+>
+  School Calendar
+</a>
+
                 <Link to="/publications" className="block px-4 py-2 text-sm hover:bg-gray-100  hover:rounded-lg">
                   Publications
                 </Link>
@@ -230,19 +240,27 @@ const Navbar = () => {
         </button>
         {activeMenu === 'resources' && (
           <div className="ml-4 space-y-1">
-            <Link to="/resources/gallery" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            <Link to="/gallery" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Gallery
             </Link>
-            <Link to="/resources/counseling" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            {/* <Link to="/resources/counseling" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Career Counseling
-            </Link>
-            <Link to="/resources/calendar" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            </Link> */}
+            {/* <Link to="/resources/calendar" className="block px-4 py-2 text-sm hover:bg-gray-100">
               School Calendar
-            </Link>
-            <Link to="/resources/publications" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            </Link> */}
+            <a
+  href={calenderpdf}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg"
+>
+  School Calendar
+</a>
+            <Link to="/publications" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Publications
             </Link>
-            <Link to="/resources/blogs" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            <Link to="/blogs" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Blogs
             </Link>
           </div>
