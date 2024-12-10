@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 // import logo from '../assets/logo.png'
-import calenderpdf from '../assets/calender.pdf'
+import calenderpdf from '../assets/2024-25 year plan.pdf'
 import logo from '../assets/logo/logo.jpg'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
