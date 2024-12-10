@@ -7,7 +7,7 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: one,
-      title: "Cambridge Curriculum",
+      title: "ICSE Curriculum",
       hoverColor: "hover:bg-green-100",
     },
     {

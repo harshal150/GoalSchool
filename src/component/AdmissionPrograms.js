@@ -21,12 +21,12 @@ const portfolios = [
       text: "Classes I to X offer a comprehensive curriculum that balances academics with extracurricular activities. Our goal is to foster intellectual curiosity, critical thinking, and a love for learning, preparing students for future challenges.",
       color: "green",
     },
-    {
-      img:highschool,
-      title: "Class XI-XII",
-      text: "Classes XI and XII provide a focused and in-depth education, preparing students for college and future careers. With specialized subject offerings and personalized guidance, we aim to equip students with the skills and knowledge to succeed.",
-      color: "Red",
-    },
+    // {
+    //   img:highschool,
+    //   title: "Class XI-XII",
+    //   text: "Classes XI and XII provide a focused and in-depth education, preparing students for college and future careers. With specialized subject offerings and personalized guidance, we aim to equip students with the skills and knowledge to succeed.",
+    //   color: "Red",
+    // },
   ];
   
 const PortfolioItem = ({ item, index }) => {

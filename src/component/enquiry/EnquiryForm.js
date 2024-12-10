@@ -169,6 +169,20 @@ Saturday: 9:00 AM to 2:00 PM </p>
     <div className="w-full md:w-1/2 px-3">
       <label
         className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+        htmlFor="number"
+      >
+        Mob No
+      </label>
+      <input
+        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
+        id="number"
+        type="number"
+        placeholder="Mobile number"
+      />
+    </div>
+    <div className="w-full md:w-1/2 px-3">
+      <label
+        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
         htmlFor="select-class"
       >
         Select Class

@@ -18,17 +18,17 @@ const Footer = () => {
           At Goal School, we nurture every child’s potential with innovative teaching, holistic growth, and a supportive environment to shape bright futures.
         </p>
         <div className="mt-[18px] flex gap-4">
-          <a className="hover:scale-110" target="_blank" href="#">
+          <a className="hover:scale-110" target="_blank" href="https://www.instagram.com/goalinternational_school/">
             
               <Icon icon="skill-icons:instagram" width="16" height="16" />
           </a>
-          <a className="hover:scale-110" target="_blank" href="/">
+          <a className="hover:scale-110" target="_blank" href="https://www.facebook.com/share/p/e8V1PxpdU6w7VEfS/">
           <Icon icon="devicon:facebook" width="16" height="16" />
           </a>
           <a className="hover:scale-110" target="_blank" href="/">
           <Icon icon="logos:whatsapp-icon" width="16" height="16" />
           </a>
-          <a className="hover:scale-110" target="_blank" href="">
+          <a className="hover:scale-110" target="_blank" href="https://www.youtube.com/@goalinternational123">
           <Icon icon="logos:youtube-icon" width="16" height="16" />
           </a>
           <a
@@ -197,7 +197,7 @@ const Footer = () => {
       <p className="text-[10px] font-normal text-white md:text-[12px]">
         © Copyright
         {/* */}2024
-        {/* */}, All Rights Reserved by YOUR WEBSITES. PVT. LTD
+        {/* */}, All Rights Reserved by Goal International Public School
       </p>
     </div>
   </div>
