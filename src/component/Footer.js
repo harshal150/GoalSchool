@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo/logo.jpg'
 import { Icon } from '@iconify/react';
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="md:w-[316px]">
         <p className="text-[18px] font-medium text-white"></p>
         <h1 className="text-white font-extrabold">
-          <img src={logo} alt='logo' className='h-14 w-32 rounded-xl'/>
+          <img src={logo} alt='logo' className='h-14 w-32 rounded-md'/>
         </h1>
         <p />
         <p className="mt-[18px] text-[15px] font-semibold  text-white ">
@@ -61,7 +61,7 @@ const Footer = () => {
               href="tel:+911800123444"
               className="font-Inter text-[14px] font-medium text-white"
             >
-              +91 1800123444
+              99169 07216
             </a>
             <p className="font-Inter text-[12px] font-medium text-white">
               Support Number
@@ -88,7 +88,7 @@ const Footer = () => {
               href="mailto:help@lorem.com"
               className="font-Inter text-[14px] font-medium text-[#fff]"
             >
-             enquiry@goalschool.com
+             goalinternationalschool@gmail.com
             </a>
             <p className="font-Inter text-[12px] font-medium text-[#fff]">
               Support Email
@@ -113,13 +113,13 @@ const Footer = () => {
           <div className="ml-[18px]">
             <a
               href="mailto:help@lorem.com"
-              className="font-Inter text-[14px] font-medium text-[#fff]"
+              className="font-Inter text-[12px] font-medium text-[#fff]"
             >
-              Bengluru, Karnataka, India, 123456
+              Near Govt. Hospital Manki Tq : Honnavar(U K) Pin Code : 581348 
             </a>
-            <p className="font-Inter text-[12px] font-medium text-white">
+            {/* <p className="font-Inter text-[12px] font-medium text-white">
               Address
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -16,7 +16,12 @@ const Navbar = () => {
   };
 
 
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
+
+  const handleclick=()=> {
+
+    navigate("/")
+  }
 
 
 
@@ -26,7 +31,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 cursor-pointer" onClick={handleclick}>
             <img
               className="h-18 w-32 "
               src={logo}
@@ -129,7 +134,7 @@ const Navbar = () => {
             <Link to="/student-life" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
               Student Life
             </Link>
-            <Link to="/facilities/modernclassroom" className="cp_rainbow_btn text-gray-900 px-3 py-2 text-sm font-medium">
+            <Link to="/contact" className="cp_rainbow_btn text-gray-900 px-3 py-2 text-sm font-medium">
               Contact Us
             </Link>
             <style>{`

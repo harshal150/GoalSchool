@@ -49,7 +49,7 @@ const PublicationsPage = () => {
             <img
               src={publication.image}
               alt={publication.title}
-              className="h-48 w-full object-cover"
+              className="h-52 w-full object-cover"
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold text-gray-800">
@@ -58,7 +58,7 @@ const PublicationsPage = () => {
               <p className="text-gray-600 mt-2">{publication.description}</p>
               <a
                 href={publication.link}
-                className="block mt-4 text-indigo-600 font-medium hover:underline"
+                className="block mt-4 text-indigo-600 font-bold hover:text-indigo-800"
               >
                 Read More →
               </a>
