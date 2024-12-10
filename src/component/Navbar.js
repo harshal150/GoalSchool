@@ -22,7 +22,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-white shadow-xl  hover:shadow-2xl transition-shadow z-50 " >
+    <nav className="bg-white shadow-lg  hover:shadow-xl transition-shadow z-50 " >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
