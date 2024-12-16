@@ -84,7 +84,7 @@ const AdmissionPrograms = () => {
         <div className="max-w-7xl mx-auto text-center">
         
           <h2 className="text-sm md:text-2xl font-bold text-yellow-500 mb-6">
-            Admissions Open For Academic Year 2024-2025 (Kindergarten to Std XII)
+            Admissions Open For Academic Year 2024-2025 (Kindergarten to Std X)
           </h2>
          
           <p className="text-sm font-semibold text-gray-500 mx-auto max-w-6xl sm:px-10">
