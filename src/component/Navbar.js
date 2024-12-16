@@ -53,7 +53,7 @@ const Navbar = () => {
                 </Link>
                 <span className="ml-1 text-sm">&#9662;</span>
               </button>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-10">
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-50">
                 <Link to="/motto" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                 Motto
                 </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 </Link>
                 <span className="ml-1 text-sm">&#9662;</span>
               </button>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-10">
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-50">
                 <Link to="/admissionprograms" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                Admission Programs
                 </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
                 Resources
                 <span className="ml-1 text-sm">&#9662;</span>
               </button>
-              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-10">
+              <div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md font-medium py-4 px-1  w-48 z-50">
                 <Link to="/gallery" className="block px-4 py-2 text-sm hover:bg-gray-100  hover:rounded-lg">
                   Gallery
                 </Link>

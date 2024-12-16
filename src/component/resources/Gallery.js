@@ -1,5 +1,6 @@
 import React from "react";
-import gallery2024 from "../../assets/gallery/2024.jpeg";
+import gallery2024 from "../../assets/gallery/2024.jpg";
+// import gallery2023 from "../../assets/gallery/2024.jpeg";
 import Heading from "../../assets/gallery/heading.avif";
 const Gallery = () => {
   return (
@@ -39,48 +40,58 @@ const Gallery = () => {
 
 
       <div className="mt-18 p-6">
-        <div className="columns-1 md:columns-2 xl:columns-3 gap-7 ">
+        <div className="columns-1 md:columns-3 xl:columns-3 gap-7 ">
           <div className=" break-inside-avoid mb-8 cursor-pointer">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto w-full rounded-lg"
               src={gallery2024}
               alt="Gallery "
             />
+            <h2 className="text-center font-bold items-center text-[20px] text-blue-600">YEAR 2024-25</h2>
           </div>
-          <div className=" break-inside-avoid  mb-8 cursor-pointer">
+          <div className=" break-inside-avoid mb-8 cursor-pointer">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto w-full rounded-lg"
               src={gallery2024}
               alt="Gallery "
             />
+            <h2 className="text-center font-bold items-center text-[20px] text-blue-600">YEAR 2023-24</h2>
           </div>
-          <div className=" break-inside-avoid  mb-8 cursor-pointer">
+
+          <div className=" break-inside-avoid mb-8 cursor-pointer">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto w-full rounded-lg"
               src={gallery2024}
               alt="Gallery "
             />
+            <h2 className="text-center font-bold items-center text-[20px] text-blue-600">YEAR 2022-23</h2>
           </div>
-          <div className=" break-inside-avoid  mb-8 cursor-pointer">
+
+          <div className=" break-inside-avoid mb-8 cursor-pointer">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto w-full rounded-lg"
               src={gallery2024}
               alt="Gallery "
             />
+            <h2 className="text-center font-bold items-center text-[20px] text-blue-600">YEAR 2021-22</h2>
           </div>
-          <div className=" break-inside-avoid  mb-8 cursor-pointer">
+
+          <div className=" break-inside-avoid mb-8 cursor-pointer">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto w-full rounded-lg"
               src={gallery2024}
               alt="Gallery "
             />
+            <h2 className="text-center font-bold items-center text-[20px] text-blue-600">YEAR 2020-21</h2>
           </div>
-          <div className=" break-inside-avoid  mb-8 cursor-pointer">
+
+          <div className=" break-inside-avoid mb-8 cursor-pointer">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto w-full rounded-lg"
               src={gallery2024}
               alt="Gallery "
             />
+            <h2 className="text-center font-bold items-center text-[20px] text-blue-600">YEAR 2019-20</h2>
           </div>
         </div>
       </div>
