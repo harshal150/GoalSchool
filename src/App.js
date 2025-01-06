@@ -22,6 +22,7 @@ import AlumniPage from "./pages/AlumniPage";
 import StudentLifePage from "./pages/StudentLifePage";
 import BlogPage from "./component/Blogs";
 import ProfilePage from "./pages/ProfilePage";
+import FacultyPage from "./pages/FacultyPage";
 // Custom hook to scroll to the top on route change
 const useScrollToTop = () => {
   const location = useLocation();
@@ -68,6 +69,7 @@ function App() {
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/publications" element={<PublicationsPage />} />
         <Route path="/alumni" element={<AlumniPage />} />
+        <Route path="/faculty" element={<FacultyPage />} />
         <Route path="/student-life" element={<StudentLifePage />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/admissionprograms" element={<AdmissionProgramsPage />} />

@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="md:w-[316px]">
         <p className="text-[18px] font-medium text-white"></p>
         <h1 className="text-white font-extrabold">
-          <img src={logo} alt='logo' className='h-14 w-32 rounded-md'/>
+          <img src={logo} alt='logo' className='h-18 w-32 rounded-md'/>
         </h1>
         <p />
         <p className="mt-[18px] text-[15px] font-semibold  text-white ">

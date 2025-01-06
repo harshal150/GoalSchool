@@ -10,7 +10,7 @@ const facilities = [
   },
   {
     icon: "📚",
-    title: "Knowledge Center",
+    title: "Library",
     path: "/facilities/knowledgecenter",
     description: "A hub for research, innovation, and self-paced learning with access to global resources."
   },
@@ -45,11 +45,12 @@ const facilities = [
     description: "Advanced tech tools and labs to prepare students for the digital age, fostering innovation and digital skills."
   },
   {
-    icon: "🍼",
+    icon: "🏠",
     title: "Day Care Center",
     path: "/day-care-center",
     description: "A safe and caring environment for the little ones, enabling parents to focus on work or studies."
   },
+  
   {
     icon: "⚕️",
     title: "Medicare",
@@ -69,12 +70,31 @@ const facilities = [
     description: "Dedicated spaces to foster creativity in art, music, and dance, encouraging students to explore their artistic talents."
   },
   {
+    icon: "💻",
+    title: "Computer Lab",
+    path: "/facilities/computer-lab",
+    description: "State-of-the-art computer labs equipped with high-performance systems for learning programming and technology skills."
+  },
+  {
     icon: "🔬",
-    title: "Science Labs",
-    path: "/science-labs",
-    description: "Fully equipped labs for physics, chemistry, and biology experiments, providing hands-on learning experiences."
+    title: "Physics Lab",
+    path: "/facilities/physics-lab",
+    description: "A well-equipped lab designed for students to explore and understand the principles of physics through experiments."
+  },
+  {
+    icon: "⚗️",
+    title: "Chemistry Lab",
+    path: "/facilities/chemistry-lab",
+    description: "A safe and modern lab where students can perform experiments and learn about chemical processes."
+  },
+  {
+    icon: "🧬",
+    title: "Biology Lab",
+    path: "/facilities/biology-lab",
+    description: "A hands-on learning space to study biology and conduct experiments in a fully equipped lab."
   }
 ];
+
 
 
 const Facilities = () => {

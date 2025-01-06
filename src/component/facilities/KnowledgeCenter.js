@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import imagebg from '../../assets/Facilities/knowledge.jpg'; // Update image path as needed
-
+import BooksList from "./BooksList";
 const features = [
   { text: "Extensive library with physical and digital resources." },
   { text: "Dedicated study pods for focused learning." },
@@ -36,18 +36,19 @@ FeatureItem.propTypes = {
 
 const KnowledgeCenter = () => {
   return (
-    <section className="py-14 md:px-24 text-zinc-900">
+  <>
+      <section className="py-14 md:px-24 text-zinc-900">
       <div className="container px-4">
         <div className="grid grid-cols-12 items-center gap-4 mb-12">
           {/* Text Section */}
           <div className="col-span-12 lg:col-span-6">
             <h1 className="text-2xl leading-none font-bold uppercase tracking-wider mb-2">
-              Knowledge Center
+              Library
             </h1>
             <hr className="bg-blue-600 h-1 rounded-[3px] w-12 opacity-100 my-6" />
             <p className="opacity-70 mb-2 text-[14px]">
-              Our Knowledge Center is the hub of learning and research at Goal School. 
-              It offers an extensive library of resources, advanced tools for research, 
+              Our Library is the hub of learning and research at Goal School. 
+              It offers an extensive collection of resources, advanced tools for research, 
               and collaborative spaces to encourage innovation and self-paced learning.
             </p>
             <ul className="flex flex-col mt-5 text-[12px]">
@@ -63,7 +64,7 @@ const KnowledgeCenter = () => {
             <div className="mt-12 lg:mt-0">
               <img
                 src={imagebg}
-                alt="Knowledge Center"
+                alt="Library"
                 className="max-w-full h-auto rounded-2xl"
               />
             </div>
@@ -71,6 +72,8 @@ const KnowledgeCenter = () => {
         </div>
       </div>
     </section>
+    <BooksList/>
+  </>
   );
 };
 

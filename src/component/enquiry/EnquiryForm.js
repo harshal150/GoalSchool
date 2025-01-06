@@ -32,7 +32,7 @@ const EnquiryForm = () => {
           </g>
         </svg>
         <span className="text-sm">
-        NO 34,2ND FLOOR, Jayanagar, Bengaluru, Karnataka 560011
+        Near Govt. Hospital Manki Tq : Honnavar(U K) Pin Code : 581348
         </span>
       </div>
       <div className="flex items-center mt-5">
@@ -86,7 +86,7 @@ const EnquiryForm = () => {
             ></path>
           </g>
         </svg>
-        <span className="text-sm">+93 749 99 65 50</span>
+        <span className="text-sm">+91  99169 07216</span>
       </div>
       <div className="flex items-center mt-5">
         <svg

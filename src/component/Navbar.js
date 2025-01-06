@@ -68,7 +68,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-
+        
             <div className="relative group">
               <button className="flex items-center text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
               <Link to="/admission" className="">
@@ -80,9 +80,9 @@ const Navbar = () => {
                 <Link to="/admissionprograms" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                Admission Programs
                 </Link>
-                <Link to="/form" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
+                {/* <Link to="/form" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                 Admission Form
-                </Link>
+                </Link> */}
                 <Link to="/enquiry" className="block px-4 py-2 text-sm hover:bg-gray-100 hover:rounded-lg">
                 Enquiry Form 
                 </Link>
@@ -124,6 +124,9 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+            <Link to="/faculty" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
+              Faculty
+            </Link>
 
             <Link to="/facilities" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
               Facilities
@@ -224,9 +227,9 @@ const Navbar = () => {
             <Link to="/admissionprograms" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Admission Programs
             </Link>
-            <Link to="/form" className="block px-4 py-2 text-sm hover:bg-gray-100">
+            {/* <Link to="/form" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Admission Form
-            </Link>
+            </Link> */}
             <Link to="/enquiry" className="block px-4 py-2 text-sm hover:bg-gray-100">
               Inquiry Form
             </Link>
@@ -271,7 +274,9 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
+      <Link to="/faculty" className="block text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
+        Faculty
+      </Link>
       {/* Other Links */}
       <Link to="/facilities" className="block text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">
         Facilities

@@ -45,7 +45,7 @@ const handelClick = () => {
           <div className="col-span-12 md:col-span-9 lg:col-span-7 xl:col-span-6 lg:ml-1">
             <h3 className="text-[16px] leading-snug md:text-3xl font-bold tracking-wider mb-5">
               Welcome to{" "}
-              <span className="text-green-500">Goal International School</span>
+              <span className="text-green-500">Goal International Public School</span>
             </h3>
             <h2 className="text-[42px] capitalize leading-snug md:text-5xl font-bold tracking-wider mb-6">
               India's Best <br />
