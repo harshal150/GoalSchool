@@ -1,72 +1,90 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ome from "../../assets/members/AramNayak2.jpg";
+import  bharati from '../../assets/faculty/Pre-Primary/bharati.JPG'
+import  Azmin from '../../assets/faculty/Pre-Primary/azmin.JPG'
+import  Sushmita from '../../assets/faculty/Pre-Primary/sushmita.JPG'
+import  Veronica from '../../assets/faculty/Pre-Primary/veronica.JPG'
+import  Roslin from '../../assets/faculty/Pre-Primary/glanet.JPG'
+import  Sangeeta from '../../assets/faculty/Pre-Primary/sangeeta.JPG'
+import  Shweta from '../../assets/faculty/Pre-Primary/shweta.g.JPG'
+import  Supriya from '../../assets/faculty/Pre-Primary/supriya.JPG'
+import  Hemalata from '../../assets/faculty/Pre-Primary/hemalata.1.JPG'
 
 const facultyData = [
   {
-    name: "Mrs. Asha Kumar",
-    photo: ome,
-    designation: "Mathematics Teacher",
-    classesHandled: "Nursery, LKG",
-    experience: "10+ years",
-  },
-  {
-    name: "Mr. Ravi Sharma",
-    photo: ome,
-    designation: "Science Teacher",
-    classesHandled: "LKG, UKG",
-    experience: "8 years",
-  },
-  {
-    name: "Mrs. Priya Sen",
-    photo: ome,
+    name: "Mrs. Hemalata Prabhu",
+    photo: Hemalata,
     designation: "English Teacher",
-    classesHandled: "Nursery, UKG",
-    experience: "5 years",
-  },
-  {
-    name: "Mr. Arjun Patel",
-    photo: ome,
-    designation: "Art & Craft Teacher",
-    classesHandled: "LKG, UKG",
-    experience: "7 years",
-  },
-  {
-    name: "Mrs. Meera Desai",
-    photo: ome,
-    designation: "Music Teacher",
     classesHandled: "Nursery, LKG",
-    experience: "6 years",
-  },
-  {
-    name: "Mr. Rajesh Nair",
-    photo: ome,
-    designation: "Physical Education Teacher",
-    classesHandled: "UKG, Nursery",
-    experience: "10 years",
-  },
-  {
-    name: "Mrs. Kavita Reddy",
-    photo: ome,
-    designation: "Hindi Teacher",
-    classesHandled: "LKG, UKG",
     experience: "9 years",
   },
   {
-    name: "Ms. Anjali Verma",
-    photo: ome,
-    designation: "Social Skills Mentor",
-    classesHandled: "Nursery, LKG",
+    name: "Mrs. Shweta Naik",
+    photo: Shweta,
+    designation: "English Teacher",
+    classesHandled: "LKG, UKG",
     experience: "4 years",
+  },
+  {
+    name: "Mrs. Veronica Gonsalves",
+    photo: Veronica,
+    designation: "EVS Teacher",
+    classesHandled: "LKG, UKG",
+    experience: "2 years",
+  },
+  {
+    name: "Mrs. Bharati Naik",
+    photo: bharati,
+    designation: "Mathematics Teacher",
+    classesHandled: "Nursery, LKG",
+    experience: "2 years",
+  },
+  {
+    name: "Mr. Azmin Shaikh",
+    photo: Azmin,
+    designation: "English Teacher",
+    classesHandled: "LKG, UKG",
+    experience: "1 years",
+  },
+  {
+    name: "Mrs. Sushmita Naik",
+    photo: Sushmita,
+    designation: "EVS Teacher",
+    classesHandled: "Nursery, UKG",
+    experience: "1 years",
+  },
+  
+  {
+    name: "Mrs. Roslin Fernandes",
+    photo: Roslin,
+    designation: "GK Teacher",
+    classesHandled: "Nursery, LKG",
+    experience: "1 years",
+  },
+  {
+    name: "Mrs. Sangeeta Jalisatgi",
+    photo: Sangeeta,
+    designation: "English Teacher",
+    classesHandled: "UKG, Nursery",
+    experience: "1 years",
+  },
+ 
+  {
+    name: "Mrs. Supriya Naik",
+    photo: Supriya,
+    designation: "Gk Mentor",
+    classesHandled: "Nursery, LKG",
+    experience: "1 years",
   },
 ];
 
 const KindergartenFaculty = () => {
   return (
     <div className="bg-yellow-50 py-12">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-gray-800 text-center mb-8">
-          Kindergarten Faculty
+      <div className="max-w-5xl mx-auto px-6">
+        <h2 className="text-4xl font-extrabold text-gray-800 text-center mb-8 capitalize">
+         Pre-Primary Teachers
         </h2>
 
         {/* Faculty Grid */}
@@ -75,7 +93,7 @@ const KindergartenFaculty = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8"
         >
           {facultyData.map((faculty, index) => (
             <motion.div
@@ -94,9 +112,9 @@ const KindergartenFaculty = () => {
               <div className="p-4">
                 <h3 className="text-lg font-bold text-gray-800">{faculty.name}</h3>
                 <p className="text-sm text-gray-500">{faculty.designation}</p>
-                <p className="text-gray-600 mt-2 text-sm">
+                {/* <p className="text-gray-600 mt-2 text-sm">
                   <strong>Classes:</strong> {faculty.classesHandled}
-                </p>
+                </p> */}
                 <p className="text-gray-600 mt-1 text-sm">
                   <strong>Experience:</strong> {faculty.experience}
                 </p>

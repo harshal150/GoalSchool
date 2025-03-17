@@ -53,7 +53,7 @@ const handelClick = () => {
             </h2>
             <div className="md:mr-40 lg:mr-48 lg:mt-10">
               <button onClick={handelClick} className="navbutton bg-blue-600 text-white py-2 px-6 rounded-md flex items-center hover:bg-blue-700 transition duration-300">
-                Admissions Open for AY 2024-2025
+                Admissions Open for AY 2025-2026
                 <Icon
                   icon="flowbite:arrow-right-outline"
                   width="16"

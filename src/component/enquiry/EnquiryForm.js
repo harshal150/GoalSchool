@@ -1,6 +1,74 @@
 import React from "react";
+import { useState } from "react";
 import AddressMap from "./AddressMap";
+import Swal from 'sweetalert2';
+
 const EnquiryForm = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobileNumber: "",
+    selectedClass: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleEnquirySubmit = async (event) => {
+    event.preventDefault();
+console.log(formData)
+    try {
+      const response = await fetch("https://api.goalcorporation.com/enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        Swal.fire({
+          icon: "success",
+          title: "Enquiry Submitted!",
+          text: "Your enquiry has been successfully sent.",
+          confirmButtonText: "OK",
+        });
+        // Clear the form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          mobileNumber: "",
+          selectedClass: "",
+          message: "",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Submission Failed",
+          text: "There was an error sending your enquiry. Please try again later.",
+          confirmButtonText: "OK",
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting enquiry:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Submission Error",
+        text: "An unexpected error occurred. Please try again later.",
+        confirmButtonText: "OK",
+      });
+    }
+  };
   return (
 <div className="w-full">
   <div className="grid grid-cols-1 md:grid-cols-12 ">
@@ -120,140 +188,141 @@ const EnquiryForm = () => {
 Monday to Friday: 9:00 AM to 5:00 PM 
 Saturday: 9:00 AM to 2:00 PM </p>
     </div>
-    <form className="md:col-span-8 p-8">
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-      <label
-        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-        htmlFor="grid-first-name"
-      >
-        First Name
-      </label>
-      <input
-        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
-        id="grid-first-name"
-        type="text"
-        placeholder="Firtname"
-      />
-    </div>
-    <div className="w-full md:w-1/2 px-3">
-      <label
-        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-        htmlFor="grid-last-name"
-      >
-        Last Name
-      </label>
-      <input
-        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white"
-        id="grid-last-name"
-        type="text"
-        placeholder="Lastname"
-      />
-    </div>
-  </div>
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div className="w-full md:w-1/2 px-3">
-      <label
-        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-        htmlFor="grid-email"
-      >
-        Email Address
-      </label>
-      <input
-        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
-        id="grid-email"
-        type="email"
-        placeholder="Enter Email"
-      />
-    </div>
-    <div className="w-full md:w-1/2 px-3">
-      <label
-        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-        htmlFor="number"
-      >
-        Mob No
-      </label>
-      <input
-        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
-        id="number"
-        type="number"
-        placeholder="Mobile number"
-      />
-    </div>
-    <div className="w-full md:w-1/2 px-3">
-      <label
-        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-        htmlFor="select-class"
-      >
-        Select Class
-      </label>
-      <select
-  className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
-  id="select-class"
->
-  <option value="pre-primary" className="text-gray-700">Nursery</option>
-  <option value="pre-primary" className="text-gray-700">LKG</option>
-  <option value="pre-primary" className="text-gray-700">UKG</option>
-  <option value="class1">Class I</option>
-  <option value="class2">Class II</option>
-  <option value="class3">Class III</option>
-  <option value="class4">Class IV</option>
-  <option value="class5">Class V</option>
-  <option value="class6">Class VI</option>
-  <option value="class7">Class VII</option>
-  <option value="class8">Class VIII</option>
-  <option value="class9">Class IX</option>
-  <option value="class10">Class X</option>
-  <option value="class11">Class XI</option>
-  <option value="class12">Class XII</option>
-</select>
-
-    </div>
-  </div>
-  <div className="flex flex-wrap -mx-3 mb-6">
-    <div className="w-full px-3">
-      <label
-        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-        htmlFor="grid-message"
-      >
-        Your Message
-      </label>
-      <textarea
-        rows={6}
-        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
-        id="grid-message"
-        placeholder="Your message here..."
-      />
-    </div>
-  </div>
-  <div className="flex justify-between w-full px-3">
-    <div className="md:flex md:items-center">
-      <label className="block text-gray-500 font-bold">
-        <input className="mr-2 leading-tight" type="checkbox" />
-        <span className="text-sm">Send me your newsletter!</span>
-      </label>
-    </div>
-    <button
-      className=" EnquiryButton shadow text-sm text-white font-bold py-2 px-6 rounded"
-      type="submit"
-    >
-      Send Message
-    </button>
-  </div>
-  <style>{`
-                  .EnquiryButton {
-                    background: linear-gradient(-45deg, #FF3D77, #338AFF ,#00008B);
-                    background-size: 600%;
-                    animation: anime 6s linear infinite;
-                   
-                   
-                    border-radius: 5px;
-                    color: white;
-                  }
-                  @keyframes anime { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; }}
-                `}</style>
-</form>
-
+    <form className="md:col-span-8 p-8" onSubmit={handleEnquirySubmit}>
+      <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="grid-first-name"
+          >
+            First Name
+          </label>
+          <input
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-first-name"
+            type="text"
+            placeholder="Firstname"
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="w-full md:w-1/2 px-3">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="grid-last-name"
+          >
+            Last Name
+          </label>
+          <input
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-last-name"
+            type="text"
+            placeholder="Lastname"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+      <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="w-full md:w-1/2 px-3">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="grid-email"
+          >
+            Email Address
+          </label>
+          <input
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-email"
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="w-full md:w-1/2 px-3">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="number"
+          >
+            Mobile Number
+          </label>
+          <input
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="number"
+            type="text"
+            placeholder="Mobile number"
+            name="mobileNumber"
+            value={formData.mobileNumber}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="w-full md:w-1/2 px-3">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="select-class"
+          >
+            Select Class
+          </label>
+          <select
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="select-class"
+            name="selectedClass"
+            value={formData.selectedClass}
+            onChange={handleChange}
+          >
+            <option value="" disabled>
+              Select Class
+            </option>
+            <option value="Nursery">Nursery</option>
+            <option value="LKG">LKG</option>
+            <option value="UKG">UKG</option>
+            <option value="Class I">Class I</option>
+            <option value="Class II">Class II</option>
+            <option value="Class III">Class III</option>
+            <option value="Class IV">Class IV</option>
+            <option value="Class V">Class V</option>
+            <option value="Class VI">Class VI</option>
+            <option value="Class VII">Class VII</option>
+            <option value="Class VIII">Class VIII</option>
+            <option value="Class IX">Class IX</option>
+            <option value="Class X">Class X</option>
+            <option value="Class XI">Class XI</option>
+            <option value="Class XII">Class XII</option>
+          </select>
+        </div>
+      </div>
+      <div className="flex flex-wrap -mx-3 mb-6">
+        <div className="w-full px-3">
+          <label
+            className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            htmlFor="grid-message"
+          >
+            Your Message
+          </label>
+          <textarea
+            rows={6}
+            className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-2 px-3 mb-3 leading-tight focus:outline-none focus:bg-white"
+            id="grid-message"
+            placeholder="Your message here..."
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </div>
+      </div>
+      <div className="flex justify-between w-full px-3">
+        <button
+          className="EnquiryButton shadow text-sm text-white font-bold py-2 px-6 rounded"
+          type="submit"
+        >
+          Send Message
+        </button>
+      </div>
+    </form>
   </div>
 
   <AddressMap/>
