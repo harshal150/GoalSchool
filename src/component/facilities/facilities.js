@@ -23,7 +23,7 @@ const facilities = [
   {
     icon: "🍽️",
     title: "Cafeteria",
-    path: "/cafeteria",
+    path: "/facilities/cafeteria",
     description: "A hygienic and spacious cafeteria offering healthy and delicious food options, catering to diverse tastes."
   },
   {

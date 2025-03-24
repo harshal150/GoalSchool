@@ -23,6 +23,7 @@ import StudentLifePage from "./pages/StudentLifePage";
 import BlogPage from "./component/Blogs";
 import ProfilePage from "./pages/ProfilePage";
 import FacultyPage from "./pages/FacultyPage";
+import CafeteriaPage from "./pages/Facilities/CafeteriaPage";
 // Custom hook to scroll to the top on route change
 const useScrollToTop = () => {
   const location = useLocation();
@@ -74,6 +75,7 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/admissionprograms" element={<AdmissionProgramsPage />} />
         <Route path="/facilities" element={<FacilitiesPage />}></Route>
+        {/* <Route path="/facilities" element={<CafeteriaPage />}></Route> */}
         <Route
           path="/facilities/modernclassroom"
           element={<ModernClassroomsPage />}
@@ -85,6 +87,10 @@ function App() {
         <Route
           path="/facilities/CounselingServices"
           element={<CounselingServicesPage />}
+        />
+        <Route
+          path="/facilities/cafeteria"
+          element={<CafeteriaPage />}
         />
       </Routes>
 
