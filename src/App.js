@@ -24,6 +24,10 @@ import BlogPage from "./component/Blogs";
 import ProfilePage from "./pages/ProfilePage";
 import FacultyPage from "./pages/FacultyPage";
 import CafeteriaPage from "./pages/Facilities/CafeteriaPage";
+import TransportationPage from "./pages/Facilities/TransportationPage";
+import SecurityPage from "./pages/Facilities/SecurityPage";
+import TechnologyPage from "./pages/Facilities/TechnologyPage";
+import DayCareCenterPage from "./pages/Facilities/DayCareCenterPage";
 // Custom hook to scroll to the top on route change
 const useScrollToTop = () => {
   const location = useLocation();
@@ -91,6 +95,22 @@ function App() {
         <Route
           path="/facilities/cafeteria"
           element={<CafeteriaPage />}
+        />
+        <Route
+          path="/facilities/transportation"
+          element={<TransportationPage />}
+        />
+        <Route
+          path="/facilities/security"
+          element={<SecurityPage />}
+        />
+        <Route
+          path="/facilities/technology"
+          element={<TechnologyPage />}
+        />
+        <Route
+          path="/facilities/day-care-center"
+          element={<DayCareCenterPage/>}
         />
       </Routes>
 

@@ -29,25 +29,25 @@ const facilities = [
   {
     icon: "🚍",
     title: "Transportation",
-    path: "/transportation",
+    path: "/facilities/transportation",
     description: "Well-managed school buses with GPS tracking for safe and reliable commutes."
   },
   {
     icon: "🔒",
     title: "24/7 Security",
-    path: "/security",
+    path: "/facilities/security",
     description: "Round-the-clock surveillance and security personnel ensuring a safe campus environment."
   },
   {
     icon: "💻",
     title: "Technology",
-    path: "/technology",
+    path: "/facilities/technology",
     description: "Advanced tech tools and labs to prepare students for the digital age, fostering innovation and digital skills."
   },
   {
     icon: "🏠",
     title: "Day Care Center",
-    path: "/day-care-center",
+    path: "/facilities/day-care-center",
     description: "A safe and caring environment for the little ones, enabling parents to focus on work or studies."
   },
   
