@@ -316,7 +316,7 @@ Saturday: 9:00 AM to 2:00 PM </p>
       </div>
       <div className="flex justify-between w-full px-3">
         <button
-          className="EnquiryButton shadow text-sm text-white font-bold py-2 px-6 rounded"
+          className=" shadow bg-green-500 text-sm text-white font-bold py-2 px-6 rounded"
           type="submit"
         >
           Send Message
