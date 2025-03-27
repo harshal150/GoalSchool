@@ -84,7 +84,7 @@ const AdmissionPrograms = () => {
         <div className="max-w-7xl mx-auto text-center">
         
           <h2 className="text-sm md:text-2xl font-bold text-yellow-500 mb-6">
-            Admissions Open For Academic Year 2024-2025 (Kindergarten to Std X)
+            Admissions Open For Academic Year 2025-2026 (Kindergarten to Std X)
           </h2>
          
           <p className="text-sm font-semibold text-gray-500 mx-auto max-w-6xl sm:px-10">
@@ -107,10 +107,10 @@ awareness.          </p>
 
           <div className="items-center mt-5 text-center mx-auto">
           <Link
-            to="/form"
+            to="/enquiry"
             className="inline-block bg-green-400 text-white py-1 px-4 rounded-lg text-sm font-semibold mb-6 hover:bg-green-500 transition duration-300"
           >
-            CLICK HERE TO FILL THE ONLINE ADMISSION FORM
+            CLICK HERE FOR ENQUIRY
           </Link>
 					</div>
 		<section className="ezy__portfolio16 light py-14 md:py-12 text-zinc-900 ">

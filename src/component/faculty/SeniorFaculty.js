@@ -37,13 +37,13 @@ const facultyData = [
     experience: "9 years",
   },
   {
-    name: "Mrs. Poornima Naik",
+    name: "Ms. Poornima Naik",
     photo: Poornima,
     designation: "Kannada Teacher",
     experience: "9 years",
   },
   {
-    name: "Mrs. Manjula Mesta",
+    name: "Ms. Manjula Mesta",
     photo: Manjula,
     designation: "Maths Teacher",
     experience: "8 years",
@@ -55,7 +55,7 @@ const facultyData = [
     experience: "7 years",
   },
   {
-    name: "Mr. Vanita Kharvi",
+    name: "Ms. Vanita Kharvi",
     photo: Vanita,
     designation: "English Teacher",
     experience: "7 years",
@@ -73,7 +73,7 @@ const facultyData = [
     experience: "3 years",
   },
   {
-    name: "Mrs. Nivedita Bhomkar",
+    name: "Ms. Nivedita Bhomkar",
     photo: Nivedita,
     designation: "Maths Teacher",
     experience: "3 years",
@@ -85,13 +85,13 @@ const facultyData = [
     experience: "3 years",
   },
   {
-    name: "Mrs. Deepa Gouda",
+    name: "Ms. Deepa Gouda",
     photo: deepa,
     designation: "Hindi Teacher",
     experience: "3 years",
   },
   {
-    name: "Mrs. Shweta Naik",
+    name: "Ms. Shweta Naik",
     photo: Shweta,
     designation: "Kannada Teacher",
     experience: "3 years",
@@ -115,7 +115,7 @@ const facultyData = [
     experience: "2 years",
   },
   {
-    name: "Mrs. Alisha Dias",
+    name: "Ms. Alisha Dias",
     photo: Alisha,
     designation: "Biology Teacher",
     experience: "2 years",
@@ -133,7 +133,7 @@ const facultyData = [
     experience: "2 years",
   },
   {
-    name: "Mrs. Sharon Lopes",
+    name: "Ms. Sharon Lopes",
     photo: Sharon,
     designation: "Value Education Teacher",
     experience: "2 years",
@@ -145,13 +145,13 @@ const facultyData = [
     experience: "2 years",
   },
   {
-    name: "Mrs. Swati Naik",
+    name: "Ms. Swati Naik",
     photo: swati,
     designation: "Kannada Teacher",
     experience: "2 years",
   },
   {
-    name: "Mrs. Divya Revankar",
+    name: "Ms. Divya Revankar",
     photo: Divya,
     designation: "Physics Teacher",
     experience: "2 years",
@@ -163,19 +163,19 @@ const facultyData = [
     experience: "2 years",
   },
   {
-    name: "Mrs. Shraddha Moger",
+    name: "Ms. Shraddha Moger",
     photo: Shraddha,
     designation: "Maths Teacher",
     experience: "1 years",
   },
   {
-    name: "Mrs. Pavitra Naik",
+    name: "Ms. Pavitra Naik",
     photo: Pavitra,
     designation: "EVS Teacher",
     experience: "1 years",
   },
   {
-    name: "Mrs. Vandana Fernandes",
+    name: "Ms. Vandana Fernandes",
     photo: Vandana,
     designation: "English Teacher",
     experience: "1 years",
@@ -187,7 +187,7 @@ const facultyData = [
     experience: "1 years",
   },
   {
-    name: "Mrs. Akshita Naik",
+    name: "Ms. Akshita Naik",
     photo: Akshita,
     designation: "EVS Teacher",
     experience: "1 years",

@@ -27,7 +27,7 @@ const facultyData = [
     experience: "4 years",
   },
   {
-    name: "Mrs. Veronica Gonsalves",
+    name: "Ms. Veronica Gonsalves",
     photo: Veronica,
     designation: "EVS Teacher",
     classesHandled: "LKG, UKG",
@@ -41,14 +41,14 @@ const facultyData = [
     experience: "2 years",
   },
   {
-    name: "Mr. Azmin Shaikh",
+    name: "Mrs. Azmin Shaikh",
     photo: Azmin,
     designation: "English Teacher",
     classesHandled: "LKG, UKG",
     experience: "1 years",
   },
   {
-    name: "Mrs. Sushmita Naik",
+    name: "Ms. Sushmita Naik",
     photo: Sushmita,
     designation: "EVS Teacher",
     classesHandled: "Nursery, UKG",
@@ -56,7 +56,7 @@ const facultyData = [
   },
   
   {
-    name: "Mrs. Roslin Fernandes",
+    name: "Ms. Roslin Fernandes",
     photo: Roslin,
     designation: "GK Teacher",
     classesHandled: "Nursery, LKG",
@@ -71,7 +71,7 @@ const facultyData = [
   },
  
   {
-    name: "Mrs. Supriya Naik",
+    name: "Ms. Supriya Naik",
     photo: Supriya,
     designation: "Gk Mentor",
     classesHandled: "Nursery, LKG",

@@ -140,7 +140,7 @@ const Footer = () => {
             <li className="mt-[15px]">
               <a
                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                href="/our-tutors"
+                href="/admissionprograms"
               >
                 Admission
               </a>
@@ -148,7 +148,7 @@ const Footer = () => {
             <li className="mt-[15px]">
               <a
                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                href="/become-a-tutor"
+                href="/contact"
               >
                 Contact Us
               </a>
@@ -156,7 +156,7 @@ const Footer = () => {
             <li className="mt-[15px]">
               <a
                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                href="/plans-and-pricing"
+                href="/"
               >
                 Student Corner
               </a>
@@ -164,7 +164,7 @@ const Footer = () => {
             <li className="mt-[15px]">
               <a
                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                href="/terms-and-conditions"
+                href="/"
               >
                 Terms and conditions
               </a>
@@ -172,7 +172,7 @@ const Footer = () => {
             <li className="mt-[15px]">
               <a
                 className="text-deutziawhite hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:font-semibold"
-                href="/privacy-policy"
+                href="/"
               >
                 Privcay policy
               </a>
@@ -184,7 +184,7 @@ const Footer = () => {
             Download the app
           </p>
           <div className="flex gap-4 sm:flex-col">
-            <a target="_blank" href="#">
+            <a target="" href="/">
             <Icon icon="logos:google-play-icon" width="24" height="24" />
             </a>
            

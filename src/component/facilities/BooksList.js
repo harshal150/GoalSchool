@@ -123,7 +123,7 @@ const BooksList = () => {
     <section className="py-12 bg-violet-100 text-gray-800">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-extrabold text-center text-blue-900 mb-6">
-          Books List 2024-25
+          Books List 2025-26
         </h1>
         <p className="text-center text-gray-700 mb-8">
           Browse the curated list of books for each grade.
